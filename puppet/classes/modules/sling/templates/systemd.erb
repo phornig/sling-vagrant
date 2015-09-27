@@ -1,0 +1,10 @@
+[Unit]
+Description=Sling Server
+
+[Service]
+ExecStart=/usr/bin/java <% if @debug %>-agentlib:jdwp=transport=dt_socket,address=<%= @debug_port %>,server=y,suspend=n<% end %> -jar <%= @jar_path %>
+User=<%= @user %>
+WorkingDirectory=<%= @lib_path %>
+
+[Install]
+WantedBy=multi-user.target

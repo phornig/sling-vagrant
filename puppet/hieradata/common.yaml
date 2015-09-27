@@ -1,0 +1,10 @@
+---
+role: "site::role::sling_server"
+
+java::package: "java-1.8.0-openjdk"
+
+maven::maven::version: "3.3.3"
+
+sling::user: "vagrant"
+sling::group: "vagrant"
+sling::debug: true

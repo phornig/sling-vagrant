@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+*.iml
+.metadata
+.settings
+.vagrant
+nbproject/*
+puppet/.project
+.com_puppetlabs_geppetto_pptp_target
+
+/share/*
